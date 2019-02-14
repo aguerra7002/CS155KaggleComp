@@ -1,0 +1,17 @@
+Scores: 
+Plain NN with regularization : .7784
+RandomForest (2000 trees, 10 depth) : .7665
+AdaBoost (50  'dumb' estimators) : .7809
+AdaBoost (10 RF estimators): .7819 
+AdaBoost (50 RF estimators): .7861
+Adaboost (50 MLP estimators (128^3)): .7866
+
+Notes: 
+Data too low dimensional to make SVD worthwhile
+Got rid of redundant rows
+Normalized before testing.
+ADABoost enhances every model we try it with.
+
+Feature Engineering:
+387 -> 4218
+First deleted redundant data, then categorized the categorical data while leaving real valued features intact.
